@@ -74,15 +74,15 @@ For support, email bgaonkar96@gmail.com.
 
 ## FAQ
 
-#### Django sometimes throws error for bootstrap.
+### Django sometimes throws error for bootstrap.
 
-pip install django-bootstrap5
+Answer : pip install django-bootstrap5
 or relevent version you are trying
 
-#### Question 2 manage.py : [Errno 2] No such file or directory
-Change directory into your project where manage.py is located.
+### manage.py : [Errno 2] No such file or directory
+Answer : Change directory into your project where manage.py is located.
 
-Answer 2
+
 
 
 ![Logo](https://github.com/bharat-ghadi/bharat-ghadi/blob/main/BHARAT%20GHADIGAONKAR%20(1).jpg)
