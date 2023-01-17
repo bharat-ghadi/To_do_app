@@ -1,30 +1,37 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>To Do app</title>
+    <link rel="stylesheet" href="{% static 'tasks/css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h3> To Do</h3>
 
-<form method='post' action="/">
-    {%csrf_token%}
-    {{ form.title }}
-    <input type="submit" name="Create Task">
-</form>
+<div class="center-column">
+    <h3 class="header"> To Do</h3>
 
-{% for task in tasks %}
-<div>
-    <a href="{% url 'update_task' task.id %}">Update</a>
-    <a href="{% url 'delete' task.id %}">Delete</a>
-    {% if task.complete == True %}
-    <strike>{{ task }}</strike>
-    {% else %}
-    <span>  {{ task }}</span>
-    {% endif %}
-    
+    <form method='post' action="/" class="form_det">
+        {%csrf_token%}
+                {{ form.title }}
+        <input type="submit" name="Create Task" class =submit>
+    </form>
+
+    {% for task in tasks %}
+    <div class="item-row">
+        <a class="btn btn-sm btn-info" href="{% url 'update_task' task.id %}">Update</a>
+        <a class="btn btn-sm btn-danger" href="{% url 'delete' task.id %}">Delete</a>
+        {% if task.complete == True %}
+        <strike>{{ task }}</strike>
+        {% else %}
+        <span>  {{ task }}</span>
+        {% endif %}
+
+    </div>
+
+    {% endfor %}
+
 </div>
-
-{% endfor %}
 </body>
 </html>

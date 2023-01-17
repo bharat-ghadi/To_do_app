@@ -1,0 +1,74 @@
+body{
+		background-image: url(../images/bg9.jpg );
+		background-repeat: no-repeat;
+        background-size: cover;
+	}
+
+	input, cancel{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		margin-bottom: 25px !important;
+	}
+
+	input::placeholder {
+	  color: red !important;
+	}
+
+	.submit{
+		background-color: #6BA3E8;
+	}
+
+	.center-column{
+	    background-color: #b3f5e8;
+		width:600px;
+		margin: 20px auto;
+		padding:20px;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+	}
+
+	.item-row{
+		background-color: #b3f5e8;
+		margin: 10px;
+		padding: 20px;
+		border-radius: 3px;
+		color: #050112;
+		font-size: 16px;
+		box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+	}
+
+	.btn-danger{
+		background-color:#e6606e ;
+		border-color: #e59400;
+	}
+
+	.form-control{
+        max-width:100%;
+    	background-color: #9cffed !important;
+		border-radius: 3px;
+		text-align:center;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+	}
+
+	#id_complete{
+	text-align: left;
+	background-color:#83de89 !important;
+	}
+
+	h3{
+		width:90%;
+		text-align:center;
+		margin: 20px 30px;
+		margin-bottom: 25px !important;
+		padding:10px 5px;
+		background-color : #b6f0ef !important;
+		border-radius: 5px;
+		box-shadow: 6px 2px 10px 0px rgba(0,0,0,0.75);
+	}
+
+	#submit{
+	background-color: #79e0f7 !important;
+	}

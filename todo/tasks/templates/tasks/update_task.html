@@ -1,15 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'tasks/css/style2.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h3>Update Tasks </h3>
-<form action="" method="POST">
-    {% csrf_token%}
-    {{form}}
-    <input type="submit" name="Update Task">
-</form>
+<div class="center-column">
+    <h3>Update Tasks </h3>
+    <div class="update">
+        <form action="" method="POST">
+            {% csrf_token%}
+            <p> {{form}}</p>
+            <input type="submit" name="Update Task" class="form-control" value="update">
+        </form>
+    </div>
+</div>
 </body>
 </html>
